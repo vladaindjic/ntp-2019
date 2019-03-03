@@ -30,15 +30,16 @@ def funkcije_kao_first_class_objekti():
     pozdrav(dobro_vece, "Pera")
 
 
-# python podrzava unutrasnje funkcije i leksicko zatvorenje
+# python podrzava unutrasnje funkcije i leksicko zatvorenje (lexical closure)
 def pozdrav_vreme_dekorisanje(func):
     import datetime
     vreme = datetime.datetime.now()
 
     # *args, **kwargs odgovaraju argumentima funkcije
-    # ne razmisljamo o njima, prosto joj sve prosledimo
-    # ako budemo menjali parametre funkcije, onda moramo menjati i ovde
-    # sta ako dekorisemo funkcije sa razlicitim brojem parametara
+    # ne razmisljamo o njima, prosto ih sve prosledimo
+    # Da ne koristimo generalizaciju pomocu *args, i **kwargs,
+    # onda bismo morali menjati dekorator pri promeni potpisa funkcije koju smo generisali.
+    # Sta ako dekorisemo funkcije sa razlicitim brojem parametara
     def wrapper(*args, **kwargs):
         print("Pocinje wrapper funkcije")
         poz_ret = func(*args, **kwargs)
@@ -153,8 +154,8 @@ def dekorator_metode():
 
 
 if __name__ == '__main__':
-    # funkcije_kao_first_class_objekti()
-    # dekoratori_rucno()
-    # dekoratori()
-    # dekoratori_stekovano()
+    funkcije_kao_first_class_objekti()
+    dekoratori_rucno()
+    dekoratori()
+    dekoratori_stekovano()
     dekorator_metode()

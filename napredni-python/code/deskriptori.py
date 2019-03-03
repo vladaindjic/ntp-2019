@@ -39,6 +39,8 @@ class PrirodanBroj():
 
 
 class ADescriptor:
+    # manipulacija objektom (u ovom slucaju dobijanje vrednosit i postavljanje vrednosti atributa)
+    # se prosledjuje klasi PrirodanBroj
     prirodan_broj = PrirodanBroj()
 
     def __init__(self, broj):

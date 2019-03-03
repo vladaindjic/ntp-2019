@@ -31,6 +31,7 @@ def filter_primer():
 
 
 # 4.4. map - primena odredjene funkcije na sve elemenete iterabilnog objekta
+# Moze biti zgodno paralelizovati.
 def map_primer():
     niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     # povecavamo sve vrednosti

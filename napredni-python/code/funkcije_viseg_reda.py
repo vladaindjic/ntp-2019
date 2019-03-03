@@ -92,7 +92,7 @@ def total_ordering_primer():
 
 
 if __name__ == '__main__':
-    # partial_primer()
-    # reduce_primer()
-    # update_wrapper_primer()
+    partial_primer()
+    reduce_primer()
+    update_wrapper_primer()
     total_ordering_primer()

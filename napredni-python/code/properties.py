@@ -1,6 +1,10 @@
 # 2. Properties
 # izvedeni atributi
 
+# Da li u Python-u imamo prava pristupa?
+# Kako se uglavnom realizuju
+# Evo jedan mehanizam koji bi ti mogao omoguciti (u neku ruku)
+
 class Osoba:
     def __init__(self, ime="", prezime=""):
         self.ime = ime
