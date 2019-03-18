@@ -40,7 +40,7 @@ def jos_malo_generatora():
 # nit izvrsava.
 # Konkurentnost ne podrazumeva paralelizam.
 # Konkurentnost - kompozicija nezavisnih nezavisnih izvrsnih jedinica
-# (vise nezavvisnih delova koda unutar jedne niti, vise niti, vise procesa)
+# (vise nezavisnih delova koda unutar jedne niti, vise niti, vise procesa)
 # Paralelizam - simultano izvrsavanje racunjanja (engl. computation), tj. izvrsnih jedinica
 # Paralelno programiranje je podskup konkurentnog izvrsavanja.
 # Koliko god mi prizeljkivali da se procesi i/ili niti paralelno izvrsavaju, ako imamo samo jedan CPU
@@ -70,11 +70,11 @@ def dva_asinhrona_brojaca():
 # Od Pythona 3.5 async/await uveden.
 # Nije potreban dekorator @asyncio.coroutine vec na nivou sintakse
 # kljucnom reci async oznacavamo da je nesto korutina.
-# Unutar ovako iznacene korutine ne smemo imati yield, samo return i await.
-# Sada zaista uvodimo korutino kao tip, a ne posmatramo samo kao interfejs sto je bilo u prethodnoj verziji Pythona
+# Unutar ovako oznacene korutine ne smemo imati yield, samo return i await.
+# Sada zaista uvodimo korutinu kao tip, a ne posmatramo samo kao interfejs sto je bilo u prethodnoj verziji Pythona
 # Jasna razlika izmedju generatora i generatora koji je namenjen da bude korutina.
 # await radi slicno kao yield from, ali prima drugacije objekte
-# await prima awaitable objekat (implementira metodu __await__,
+# await prima awaitable objekat (implementira metodu __await__),
 # koja vraca iterator, koji nije korutina)
 # korutine su awaitable objekti
 

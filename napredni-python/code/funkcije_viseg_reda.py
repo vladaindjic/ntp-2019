@@ -31,7 +31,7 @@ def prirodni_brojevi(n):
 
 # racunanje faktorijela upotrebom redukcije
 def faktoriel(n):
-    return reduce(mul, prirodni_brojevi(n), 1)
+    return reduce(mul, range(1, n+1), 1)
 
 
 def reduce_primer():
@@ -92,7 +92,7 @@ def total_ordering_primer():
 
 
 if __name__ == '__main__':
-    partial_primer()
-    reduce_primer()
+    # partial_primer()
+    # reduce_primer()
     update_wrapper_primer()
-    total_ordering_primer()
+    # total_ordering_primer()
