@@ -1,0 +1,9 @@
+Expression: Expression '+' Expression {left, 1}
+          | Expression '-' Expression {left, 1}
+          | Expression '*' Expression {left, 2}
+          | Expression '/' Expression {left, 2}
+          | '(' Expression ')'
+          | INT ;
+
+terminals
+INT: /\d+/ ;

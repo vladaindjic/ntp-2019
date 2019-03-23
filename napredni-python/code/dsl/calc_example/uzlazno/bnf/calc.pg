@@ -1,0 +1,24 @@
+Expression: Term
+          | Expression PlusOrMinus Term
+;
+
+Term: Factor
+    | Term MultOrDiv Factor
+;
+
+Factor: INT
+      | LPAREN Expression RPAREN
+;
+
+PlusOrMinus: PLUS | MINUS ;
+MultOrDiv: MULT | DIV ;
+
+// sekcija terminalnih simbola
+terminals
+INT: /\d+/ ;
+LPAREN: '(' ;
+RPAREN: ')' ;
+PLUS: '+' ;
+MINUS: '-' ;
+MULT: '*' ;
+DIV: '/' ;

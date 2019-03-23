@@ -1,0 +1,20 @@
+Expression:
+    operands=Term (operators=PlusOrMinus operands=Term)*
+;
+
+PlusOrMinus:
+    '+' | '-'
+;
+
+Term:
+    operands=Factor (operators=MulOrDiv operands=Factor)*
+;
+
+MulOrDiv:
+    '*' | '/'
+;
+
+
+Factor:
+    op_num=INT | ('(' op_expr=Expression ')')
+;
